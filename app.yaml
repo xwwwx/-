@@ -1,0 +1,13 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: server.app
+  
+libraries:
+- name: flask
+  version: latest
+- name: ssl
+  version: latest
